@@ -1,0 +1,161 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Dosis', sans-serif;
+  margin: 0;
+}
+
+.banner {
+  width: 100%;
+  height: 750px;
+  background-image: url('https://s3.amazonaws.com/personal-hosting-slin/title-image.png');
+  /*background-position: center;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.banner img {
+  margin-top: 10%;
+  padding: 50px;
+  border: 2px double white;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+  font-size: 2em;
+}
+
+.personal-info {
+  margin-top: 5%;
+  color: white;
+}
+
+.links a {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+  background-color: white;
+  padding: 0.35%;
+  margin: 0.5%;
+  border-radius: 20%;
+}
+
+.links a:hover {
+  background-color: #bfbfbf;
+  transition: all 0.4s;
+}
+
+.info {
+  height: 400px;
+  margin-top: -50px;
+  background-color: white;
+}
+
+.about .description div {
+  display: inline;
+  float: left;
+  width: 48%;
+}
+
+.about {
+  background-image: url("https://s3.amazonaws.com/personal-hosting-slin/aboutme-background.jpg");
+  margin-top: -2%;
+  padding-top: 1%;
+}
+
+.about h2 {
+  color: white;
+  margin-bottom: -1%;
+}
+
+.aboutme-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-position: center;
+  background-size: cover;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.projects a {
+  color: #0900AE;
+  text-decoration: none;
+}
+
+.projects a:hover {
+  color: #D4D820;
+}
+
+.project-one {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #EDEDEF;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.project-two {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  background-color: #EDEDEF;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.description {
+  text-align: center;
+  width: 33%;
+  background-color: white;
+  padding: 1% 2%;
+}
+
+.description h2 {
+  color: #0900AE;
+  border-bottom: 1px solid #D4D820;
+}
+
+.project-info div {
+  display: inline-block;
+  width: 45%;
+}
+
+.contact {
+  background-image: url("https://s3.amazonaws.com/personal-hosting-slin/contact-background.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#links {
+  text-align: right;
+}
+
+
+#links a:nth-child(1) {
+  color: black;
+}
+
+.blue {
+  color: #0900AE;
+}
