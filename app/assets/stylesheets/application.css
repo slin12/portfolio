@@ -147,7 +147,7 @@ h2 {
 }
 
 .photo {
-  width: 60%;
+  width: 40%;
 }
 
 .project-one img {
@@ -210,6 +210,18 @@ h2 {
 .blue {
   color: #0900AE;
 }
+
+.demo {
+  width: 95%;
+  margin-left: 5%;
+}
+
+#arrows {
+  text-align: center;
+  font-size: 2em;
+}
+
+/*resizing for tablets/phones */
 
 @media only screen and (max-width: 1100px) {
   .about .description div {
