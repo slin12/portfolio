@@ -257,20 +257,6 @@ h2 {
     display: block;
   }
 
-  .project-one, .project-two {
-    display: block;
-    padding: 4%;
-  }
-
-  .project-one .description, .project-two .description {
-    visibility: hidden;
-    display: none;
-  }
-
-  .project-one .photo, .project-two .photo {
-    width: 100%;
-  }
-
   /*ABOUT MEe*/
   .about .description {
     display: block;
@@ -302,4 +288,21 @@ h2 {
   .personal-photo img {
     display: none;
   }
+  
+  /* PROJECTS */
+  .project-one, .project-two {
+    display: block;
+    padding: 4%;
+  }
+
+  .project-one .description, .project-two .description {
+    visibility: hidden;
+    display: none;
+  }
+
+  .project-one .photo, .project-two .photo {
+    width: 100%;
+  }
+
+
 }
