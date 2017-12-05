@@ -237,7 +237,7 @@ h2 {
 
 @media only screen and (max-width: 1050px) {
   html, body {
-    font-size: 0.9em;
+    font-size: 1.03em;
   }
 
 }
@@ -269,5 +269,42 @@ h2 {
 
   .project-one .photo, .project-two .photo {
     width: 100%;
+  }
+
+
+  .about .description {
+    display: block;
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about .description h2{
+    color: #0900AE;
+  }
+
+  .about {
+    background-image: url("https://s3.amazonaws.com/personal-hosting-slin/aboutme-background.jpg");
+    margin-top: -2%;
+    padding-top: 1%;
+  }
+
+  .about h2 {
+    color: white;
+    margin-bottom: -1%;
+  }
+
+  .aboutme-container {
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    align-items: center;
+  }
+
+  .personal-photo img {
+    display: none;
   }
 }
