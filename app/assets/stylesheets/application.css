@@ -271,7 +271,7 @@ h2 {
     width: 100%;
   }
 
-
+  /*ABOUT MEe*/
   .about .description {
     display: block;
     float: none;
@@ -287,11 +287,6 @@ h2 {
     background-image: url("https://s3.amazonaws.com/personal-hosting-slin/aboutme-background.jpg");
     margin-top: -2%;
     padding-top: 1%;
-  }
-
-  .about h2 {
-    color: white;
-    margin-bottom: -1%;
   }
 
   .aboutme-container {
