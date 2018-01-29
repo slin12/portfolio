@@ -14,10 +14,11 @@
  *= require_self
  */
 
-body, html {
+body,
+html {
   width: 100%;
   overflow-x: hidden;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   margin: 0;
   font-size: 1em;
 }
@@ -30,7 +31,7 @@ body, html {
 }
 
 #hidden-title h2 {
-  border-bottom: 1px solid #D4D820;
+  border-bottom: 1px solid #d4d820;
 }
 
 .hidden-info {
@@ -44,7 +45,7 @@ body, html {
 .banner {
   width: 100%;
   height: 750px;
-  background-image: url('https://s3.amazonaws.com/personal-hosting-slin/title-image.png');
+  background-image: url("https://s3.amazonaws.com/personal-hosting-slin/title-image.png");
   /*background-position: center;*/
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,7 +61,7 @@ body, html {
 
 h2 {
   text-align: center;
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
   font-size: 2em;
 }
 
@@ -124,18 +125,18 @@ h2 {
 }
 
 .projects a {
-  color: #0900AE;
+  color: #0900ae;
   text-decoration: none;
 }
 
 .projects a:hover {
-  color: #D4D820;
+  color: #d4d820;
 }
 
-.project-one {
+.project-left {
   display: flex;
   justify-content: space-evenly;
-  background-color: #EDEDEF;
+  background-color: #ededef;
   padding-top: 3%;
   padding-bottom: 3%;
   align-items: center;
@@ -150,21 +151,21 @@ h2 {
   width: 40%;
 }
 
-.project-one img {
+.project-left img {
   height: 100%;
   width: 100%;
 }
 
-.project-two img {
+.project-right img {
   height: 100%;
   width: 100%;
 }
 
-.project-two {
+.project-right {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row-reverse;
-  background-color: #EDEDEF;
+  background-color: #ededef;
   padding-top: 3%;
   padding-bottom: 3%;
   align-items: center;
@@ -180,8 +181,8 @@ h2 {
 }
 
 .description h2 {
-  color: #0900AE;
-  border-bottom: 1px solid #D4D820;
+  color: #0900ae;
+  border-bottom: 1px solid #d4d820;
 }
 
 .project-info div {
@@ -202,13 +203,12 @@ h2 {
   text-align: right;
 }
 
-
 #links a:nth-child(1) {
   color: black;
 }
 
 .blue {
-  color: #0900AE;
+  color: #0900ae;
 }
 
 .demo {
@@ -236,14 +236,15 @@ h2 {
 }
 
 @media only screen and (max-width: 1050px) {
-  html, body {
+  html,
+  body {
     font-size: 1.03em;
   }
-
 }
 
 @media only screen and (max-width: 900px) {
-  html, body {
+  html,
+  body {
     font-size: 0.95em;
   }
 
@@ -273,8 +274,8 @@ h2 {
     margin: 0 auto;
   }
 
-  .about .description h2{
-    color: #0900AE;
+  .about .description h2 {
+    color: #0900ae;
   }
 
   .about {
@@ -298,17 +299,20 @@ h2 {
   }
 
   /* PROJECTS */
-  .project-one, .project-two {
+  .project-left,
+  .project-right {
     display: block;
     padding: 4%;
   }
 
-  .project-one .description, .project-two .description {
+  .project-left .description,
+  .project-right .description {
     visibility: hidden;
     display: none;
   }
 
-  .project-one .photo, .project-two .photo {
+  .project-left .photo,
+  .project-right .photo {
     width: 100%;
   }
 
