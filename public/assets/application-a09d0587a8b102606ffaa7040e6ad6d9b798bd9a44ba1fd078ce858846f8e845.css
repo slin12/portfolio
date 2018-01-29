@@ -1,0 +1,323 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+body,
+html {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Dosis", sans-serif;
+  margin: 0;
+  font-size: 1em;
+}
+
+#hidden-title {
+  display: none;
+  visibility: hidden;
+  text-align: center;
+  margin-top: -3%;
+}
+
+#hidden-title h2 {
+  border-bottom: 1px solid #d4d820;
+}
+
+.hidden-info {
+  text-align: center;
+  position: relative;
+  bottom: -50%;
+  display: none;
+  visibility: hidden;
+}
+
+.banner {
+  width: 100%;
+  height: 750px;
+  background-image: url("https://s3.amazonaws.com/personal-hosting-slin/title-image.png");
+  /*background-position: center;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.banner img {
+  margin-top: 6%;
+  padding: 50px;
+  border: 2px double white;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Cabin", sans-serif;
+  font-size: 2em;
+}
+
+.personal-info {
+  margin-top: 5%;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.links a {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+  background-color: white;
+  padding: 0.35%;
+  margin: 0.5%;
+  border-radius: 20%;
+  text-shadow: none;
+}
+
+.links a:hover {
+  background-color: #bfbfbf;
+  transition: all 0.4s;
+}
+
+.info {
+  height: 400px;
+  margin-top: -50px;
+  background-color: white;
+}
+
+.photo {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.about .description div {
+  display: inline;
+  float: left;
+  width: 48%;
+}
+
+.about {
+  background-image: url("https://s3.amazonaws.com/personal-hosting-slin/aboutme-background.jpg");
+  margin-top: -2%;
+  padding-top: 1%;
+}
+
+.about h2 {
+  color: white;
+  margin-bottom: -1%;
+}
+
+.aboutme-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-position: center;
+  background-size: cover;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  align-items: center;
+}
+
+.projects a {
+  color: #0900ae;
+  text-decoration: none;
+}
+
+.projects a:hover {
+  color: #d4d820;
+}
+
+.project-left {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #ededef;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  align-items: center;
+}
+
+.personal-photo img {
+  height: 60%;
+  width: 100%;
+}
+
+.photo {
+  width: 40%;
+}
+
+.project-left img {
+  height: 100%;
+  width: 100%;
+}
+
+.project-right img {
+  height: 100%;
+  width: 100%;
+}
+
+.project-right {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  background-color: #ededef;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  align-items: center;
+}
+
+.description {
+  text-align: center;
+  width: 33%;
+  background-color: white;
+  padding: 1% 2%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.description h2 {
+  color: #0900ae;
+  border-bottom: 1px solid #d4d820;
+}
+
+.project-info div {
+  display: inline-block;
+  width: 45%;
+}
+
+.contact {
+  background-image: url("https://s3.amazonaws.com/personal-hosting-slin/contact-background.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#links {
+  text-align: right;
+}
+
+#links a:nth-child(1) {
+  color: black;
+}
+
+.blue {
+  color: #0900ae;
+}
+
+.demo {
+  width: 95%;
+  margin-left: 5%;
+}
+
+#arrows {
+  text-align: center;
+  font-size: 2em;
+}
+
+/*resizing for tablets/phones */
+
+@media only screen and (max-width: 1100px) {
+  .about .description div {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  .banner img {
+    margin-top: 12%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  html,
+  body {
+    font-size: 1.03em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html,
+  body {
+    font-size: 0.95em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  .banner img {
+    margin-top: 15%;
+  }
+
+  #hidden-title {
+    visibility: visible;
+    display: block;
+  }
+
+  .hidden-info {
+    visibility: visible;
+    display: block;
+  }
+
+  /*ABOUT MEe*/
+  .about .description {
+    display: block;
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about .description h2 {
+    color: #0900ae;
+  }
+
+  .about {
+    background-image: url("https://s3.amazonaws.com/personal-hosting-slin/aboutme-background.jpg");
+    margin-top: -2%;
+    padding-top: 1%;
+  }
+
+  .aboutme-container {
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    align-items: center;
+  }
+
+  .personal-photo img {
+    display: none;
+  }
+
+  /* PROJECTS */
+  .project-left,
+  .project-right {
+    display: block;
+    padding: 4%;
+  }
+
+  .project-left .description,
+  .project-right .description {
+    visibility: hidden;
+    display: none;
+  }
+
+  .project-left .photo,
+  .project-right .photo {
+    width: 100%;
+  }
+
+  .demo {
+    margin: 0 auto;
+  }
+}
